@@ -1,0 +1,335 @@
+<!--
+Author: Jesus R. Rijo (IST 126.001)
+
+Date: 2/29/2020
+
+Instructor: Dr. Eniye Tebekaemi
+
+Description: Assignment for CSS.
+-->
+
+<!DOCTYPE html>
+
+    <html>
+        <head>
+			<title>
+				Calhoun Computational Research Center
+			</title>
+			
+			<!--This line links this HTML file to the CSS file.-->
+			<link type="text/css" rel="stylesheet" href="..\CSS\IST126.001—Jesus Rafael Rijo—CSS_FinalProject.css"/>
+			
+        </head>
+		
+<!-------------------------------------------------------------------------------------------------------------------------->	
+<!-------------------------------------------------------------------------------------------------------------------------->		
+
+        <body>
+<!-------------------------------------------------------------------------------------------------------------------------->
+		
+			<div id="background">
+				
+			</div>
+			
+<!-------------------------------------------------------------------------------------------------------------------------->	
+	
+			<div id="header">
+				<i>
+					<b>
+						<h1>
+							<center>
+								<a href="../Index.html"; class="sidebar">Calhoun Computational Research Center</a>
+							</center>
+						</h1>					
+					</b>
+				</i>
+			</div>
+			
+<!-------------------------------------------------------------------------------------------------------------------------->
+			
+			<div id="footer">
+				<h3 style="text-align:center;">© Calhoun Computational Research Center  (2020)
+
+						<span style="float:right; padding: 1em">
+							<a href= "mailto:info@calhoun.org" target="_blank">
+								info@calhoun.org
+							</a>
+						</span>
+						
+						<span style="float:left; padding: 1em">
+							<a href= "mailto:business@calhoun.org " target="_blank">
+								business@calhoun.org  
+							</a>
+						</span>
+				</h3>
+			</div>	
+			
+<!-------------------------------------------------------------------------------------------------------------------------->		
+	
+			<div id="history">
+				<h2>
+					<i>
+						<b>
+							<a href="History.html"; class="sidebar">Our History</a>
+						</b>
+					</i>
+				</h2>
+			</div>
+			
+<!-------------------------------------------------------------------------------------------------------------------------->		
+		
+			<div id="products">
+				<h2>
+					<i>
+						<b>
+							<a href="Products.html"; class="sidebar">Products and Services</a>
+						</b>
+					</i>
+				</h2>
+			</div>
+			
+<!-------------------------------------------------------------------------------------------------------------------------->	
+			
+			<div id="staff">
+				<h2>
+					<i>
+						<b>
+							<a href="Staff.html"; class="sidebar">Staff</a>
+						</b>
+					</i>
+				</h2>
+			</div>
+			
+<!-------------------------------------------------------------------------------------------------------------------------->
+			
+			<div id="contactinfo">
+				<h2>
+					<i>
+						<b>
+							<a href="Contacts.html"; class="sidebar">Contact Information</a>
+						</b>
+					</i>
+				</h2>
+			</div>
+			
+<!-------------------------------------------------------------------------------------------------------------------------->
+
+			<div id="ourinfsystems">
+				<h2>
+					<i>
+						<b>
+							<a href="InfoSystems.html"; class="sidebar">Our Information Systems</a>
+						</b>
+					</i>
+				</h2>
+			</div>
+			
+<!-------------------------------------------------------------------------------------------------------------------------->
+
+			<div id="bingogame">
+				<h2>
+					<i>
+						<b>
+							<a href="Converter.html"; class="sidebar">Converters</a>
+						</b>
+					</i>
+				</h2>
+			</div>
+			
+<!-------------------------------------------------------------------------------------------------------------------------->	
+<!-------------------------------------------------------------------------------------------------------------------------->	
+
+			<div id="main" style="line-height: 2.0;">	
+				
+				<center>
+					</br>
+					<img src="..\Images\math.gif" alt="Math Gif" style="width: 150px">
+					
+					<h1>Converters/Gadgets</h1>
+					
+					<p><b>
+					Please use our free converters and gadgets!
+					</b></p>
+				</center>
+				
+				<hr>
+				
+				<center>
+					<p><b><i>Kilos to Pounds</i></b></p>
+					<form>
+						<label for="var1a">Kilos</label>
+						
+						<input type="number" id="var1a" size="2">
+						
+						<input type="button" id="var1b" value="submit" onclick="kilosToPounds(); return false;">
+						
+						Answer: <div id="var1c" style="border:10px; border: 1px solid black; width: 150px; height: 25px;
+						display: inline-block;"> 
+							
+						</div>
+						
+					</form>
+					<hr>
+					
+<!-------------------------------------------------------------------------------------------------------------------------->	
+					
+					<p><b><i>Pounds to Kilos</i></b></p>						
+					<form>
+						<label for="var2a">Pounds</label>
+						
+						<input type="number" id="var2a" size="2">
+						
+						<input type="button" id="var2b" value="submit" onclick="poundsToKilos(); return false;">
+						
+						Answer: <div id="var2c" style="border:10px; border: 1px solid black; width: 150px; height: 25px;
+						display: inline-block;"> 
+						
+						</div>
+						
+					</form>
+					<hr>
+					
+<!-------------------------------------------------------------------------------------------------------------------------->	
+					
+					<p><b><i>Liters to US Gallons</i></b></p>						
+					<form>
+						<label for="var3a">Liters</label>
+						
+						<input type="number" id="var3a" size="2">
+						
+						<input type="button" id="var3b" value="submit" onclick="litersToUSGallons(); return false;">
+						
+						Answer: <div id="var3c" style="border:10px; border: 1px solid black; width: 150px; height: 25px;
+						display: inline-block;"> 
+						
+						</div>
+						
+					</form>
+					<hr>
+					
+<!-------------------------------------------------------------------------------------------------------------------------->		
+				
+					<p><b><i>US Gallons to Liters</i></b></p>						
+					<form>
+						<label for="var4a">US Gallons</label>
+						
+						<input type="number" id="var4a" size="2">
+						
+						<input type="button" id="var4b" value="submit" onclick="USGallonsToliters(); return false;">
+						
+						Answer: <div id="var4c" style="border:10px; border: 1px solid black; width: 150px; height: 25px;
+						display: inline-block;"> 
+						
+						</div>
+						
+					</form>
+					<hr>
+<!-------------------------------------------------------------------------------------------------------------------------->
+				
+					<p><b><i>Body Mass Index Calculator(Inches/Lbs)</i></b></p>						
+					<form>
+						<label for="var5a">Height</label>
+						
+						<input type="number" id="var5d" size="2">
+						
+						<label for="var5d">Weight</label>
+						
+						<input type="number" id="var5a" size="2">
+						
+						<input type="button" id="var5b" value="submit" onclick="BMI(); return false;">
+						
+						Answer: <div id="var5c" style="border:10px; border: 1px solid black; width: 150px; height: 25px;
+						display: inline-block;"> 
+						
+						</div>
+						
+					</form>
+					<hr>
+					
+<!-------------------------------------------------------------------------------------------------------------------------->
+									
+					<p><b><i>Generate A Random Number In a Particular Range</i></b></p>						
+					<form>
+						<label for="var6a">Start</label>
+						<input type="number" id="var6d" size="2">
+						
+						<label for="var6d">End</label>
+						<input type="number" id="var6a" size="2">
+						
+						<input type="button" id="var6b" value="submit" onclick="giveRand(); return false;">
+						
+						Answer: <div id="var6c" style="border:10px; border: 1px solid black; width: 150px; height: 25px;
+						display: inline-block;"> 
+						
+						</div>
+						
+					</form>
+					<hr>
+					
+<!-------------------------------------------------------------------------------------------------------------------------->
+					
+					<p><b><i>Find Nth Factorial</i></b></p>						
+					<form>
+						<label for="var7a">Number</label>
+						<input type="number" name= "test" id="var7a" size="2">
+						
+						<input type="button" id="var7b" value="submit" onclick="factorial(); return false;">
+						
+						Answer: <div id="var7c" style="border:10px; border: 1px solid black; width: 300px; height: 25px;
+						display: inline-block;"> 
+						
+						</div>
+						
+					</form>
+					<hr>
+					
+<!-------------------------------------------------------------------------------------------------------------------------->	
+					
+					<p><b><i>Find Nth Fibonacci Number</i></b></p>						
+					<form>
+						<label for="var8a">Number</label>
+						<input type="number" name= "test" id="var8a" size="2">
+						
+						<input type="button" id="var8b" value="submit" onclick="fib(); return false;">
+						
+						Answer: <div id="var8c" style="border:10px; border: 1px solid black; width: 300px; height: 25px;
+						display: inline-block;"> 
+						
+						</div>
+						
+					</form>
+					<hr>
+					
+<!-------------------------------------------------------------------------------------------------------------------------->
+					
+					<p><b><i>Find If a Number is Prime</i></b></p>						
+					<form>
+						<label for="var9a">Number</label>
+						<input type="number" name= "test" id="var9a" size="2">
+						
+						<input type="button" id="var9b" value="submit" onclick="isPrime(); return false;">
+						
+						Answer: <div id="var9c" style="border:10px; border: 1px solid black; width: 300px; height: 25px;
+						display: inline-block;"> 
+						
+						</div>
+						
+					</form>
+					<hr>
+					
+<!-------------------------------------------------------------------------------------------------------------------------->				
+				</center>
+				
+			</div>
+		
+<!-------------------------------------------------------------------------------------------------------------------------->
+			
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+	
+<!-------------------------------------------------------------------------------------------------------------------------->			
+		<script src="../JS/Conversions.js" type="text/javascript"> </script>
+		
+        </body>    
+		
+    </html>
